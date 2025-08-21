@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LumArt - Art Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lang-toggle">
+    <button onclick="switchLang('es')">ES</button>
+    <button onclick="switchLang('en')">EN</button>
+  </div>
+
+  <!-- Fondo artístico interactivo -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Menú hamburguesa -->
+  <nav class="tab-nav-mobile">
+    <button class="hamburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="menu-list">
+      <li><a href="#top" class="menu-link">Inicio</a></li>
+      <li><a href="#about" class="menu-link">Sobre Nosotros</a></li>
+      <li><a href="#products" class="menu-link">Galería</a></li>
+      <li><a href="#contact" class="menu-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="top" class="tab-content fade-in section">
+    <div class="logo-title-wrap">
+      <img src="images/logo_lumart.png" alt="Logo LumArt" class="lumart-logo"/>
+      <h1 id="lumart-title"><span data-lang="title">LumArt - Art Studio</span></h1>
+    </div>
+    <p class="tagline"><span data-lang="tagline">Un viaje visual a través de la historia y la expresión artística</span></p>
+  </header>
+
+  <main>
+    <section class="about tab-content fade-in section" id="about">
+      <h2 data-lang="about_title">Sobre Nosotros</h2>
+      <p>
+        En <strong>LumArt</strong>, somos un estudio de arte especializado en artes plásticas, 
+        dominando diversas técnicas de pintura y estilos visuales. Nuestras obras incluyen tanto 
+        creaciones originales como reinterpretaciones de piezas icónicas de artistas reconocidos. 
+        Nuestra misión es llevarte un pedazo de historia a través del arte, transformando espacios 
+        con emoción, color y legado.
+      </p>
+      <div class="about-subsection">
+        <h3>Misión</h3>
+        <p>Fomentar el aprecio por las artes visuales, de manos y corazón de quien los elabora.</p>
+        <h3>Visión</h3>
+        <p>Ser un lugar de referencia cultural reconocido por la calidad de sus productos de arte.</p>
+        <h3>Nuestra Historia</h3>
+        <p>
+          LumArt nació del sueño de crear un espacio donde la pasión por el arte se combina con la innovación y el respeto por la tradición. Desde nuestros inicios en 2020, hemos trabajado en fomentar la creatividad, la colaboración y el crecimiento artístico de nuestra comunidad.
+        </p>
+        <h3>Valores</h3>
+        <ul>
+          <li><strong>Creatividad:</strong> Fomentamos la expresión única de cada artista.</li>
+          <li><strong>Calidad:</strong> Cada obra busca la excelencia en técnica y significado.</li>
+          <li><strong>Compromiso:</strong> Apostamos por la educación y la difusión cultural.</li>
+        </ul>
+        <h3>Equipo</h3>
+        <p>
+          Nuestro equipo está formado por expertos en arte, gestión cultural y educación artística, comprometidos con acercar el arte a todos los públicos.
+        </p>
+      </div>
+    </section>
+
+    <section class="products tab-content fade-in section" id="products">
+      <h2 data-lang="products_title">Galería de Obras</h2>
+      <div class="gallery-horizontal">
+        <div class="gallery-item">
+          <img src="images/obra1.jpg" alt="Calle Colonial" class="gallery-zoom-img">
+          <p><strong>Calle Colonial</strong></p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/obra2.jpg" alt="Auto Amarillo" class="gallery-zoom-img">
+          <p><strong>Auto Amarillo</strong></p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/obra3.jpg" alt="Caballo" class="gallery-zoom-img">
+          <p><strong>Caballo</strong></p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/obra4.jpg" alt="Iglesia Colonial" class="gallery-zoom-img">
+          <p><strong>Iglesia Colonial</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact tab-content fade-in section" id="contact">
+      <h2 data-lang="contact_title">Contacto</h2>
+      <ul>
+        <li>
+          <strong>Teléfono:</strong>
+          <a href="https://wa.me/593983337795" target="_blank" class="contact-link whatsapp-link">
+            <span style="color:#25D366; font-weight:600;">+593 983 337 795</span>
+          </a>
+        </li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:lumar_2223@yahoo.com" class="contact-link email-link" style="color:#1976d2; font-weight:600;">
+            lumar_2223@yahoo.com
+          </a>
+        </li>
+        <li>
+          <strong>Instagram:</strong>
+          <a href="https://instagram.com/Lum_Artstudio" target="_blank" class="insta-link" title="Instagram LumArt">
+            <svg height="22" width="22" viewBox="0 0 32 32" class="insta-icon"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M16 9a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.5-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill="#E4405F"/><rect x="9" y="9" width="14" height="14" rx="7" fill="none" stroke="#E4405F" stroke-width="2"/></svg>
+            <span>@Lum_Artstudio</span>
+          </a>
+        </li>
+        <li>
+          <strong>Facebook:</strong>
+          <a href="https://facebook.com/Lum_ArtStudio" target="_blank" class="contact-link fb-link" style="color:#1976d2; font-weight:600;">
+            Lum_ArtStudio
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span data-lang="title">LumArt - Art Studio</span>. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Iconos flotantes siempre visibles -->
+  <a href="https://wa.me/593983337795" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48" fill="none">
+      <circle cx="24" cy="24" r="24" fill="#25D366"/>
+      <path fill="#fff" d="M24 14c-5.52 0-10 4.48-10 10 0 1.77.46 3.44 1.27 4.9L14 34l5.1-1.34A9.96 9.96 0 0 0 24 34c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.53 0-2.98-.37-4.24-1.02l-.3-.17-3.03.8.81-2.96-.2-.31A7.96 7.96 0 0 1 16 24c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.26-6.56c-.23-.12-1.32-.65-1.52-.72-.2-.07-.34-.12-.48.12-.14.23-.54.72-.66.87-.12.15-.24.16-.46.06-.23-.12-.98-.36-1.86-1.15-.69-.62-1.15-1.38-1.28-1.6-.13-.23-.01-.35.11-.47.11-.11.23-.3.34-.45.11-.15.15-.24.23-.39.08-.15.04-.29-.02-.41-.07-.12-.48-1.16-.66-1.58-.18-.42-.36-.36-.48-.37-.12-.01-.26-.01-.4-.01-.14 0-.36.05-.56.26-.2.21-.77.76-.77 1.85s.79 2.14.9 2.29c.11.15 1.56 2.37 3.79 3.23.53.18.94.29 1.26.37.53.13 1.02.11 1.4.07.43-.04 1.32-.54 1.51-1.07.19-.53.19-.99.13-1.08-.06-.09-.21-.14-.44-.26z"/>
+    </svg>
+  </a>
+  <a href="https://instagram.com/Lum_Artstudio" class="insta-float" target="_blank" title="Instagram LumArt">
+    <svg height="38" width="38" viewBox="0 0 32 32" class="insta-icon"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M16 9a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.5-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill="#E4405F"/><rect x="9" y="9" width="14" height="14" rx="7" fill="none" stroke="#E4405F" stroke-width="2"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scripts/bg.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/section-transition.js"></script>
+  <script>
+    // Traducciones
+    const translations = {
+      es: {
+        title: "LumArt - Art Studio",
+        tagline: "Un viaje visual a través de la historia y la expresión artística",
+        about_title: "Sobre Nosotros",
+        products_title: "Galería de Obras",
+        contact_title: "Contacto",
+        product1: "Calle Colonial",
+        product2: "Auto Amarillo",
+        product3: "Caballo",
+        product4: "Iglesia Colonial",
+        footer: "© 2025 LumArt - Art Studio. Todos los derechos reservados."
+      },
+      en: {
+        title: "LumArt - Art Studio",
+        tagline: "A visual journey through history and artistic expression",
+        about_title: "About Us",
+        products_title: "Gallery",
+        contact_title: "Contact",
+        product1: "Colonial Street",
+        product2: "Yellow Car",
+        product3: "Horse",
+        product4: "Colonial Church",
+        footer: "© 2025 LumArt - Art Studio. All rights reserved."
+      }
+    };
+    function switchLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.getAttribute('data-lang');
+        if (translations[lang] && translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+    }
+  </script>
+</body>
+</html>

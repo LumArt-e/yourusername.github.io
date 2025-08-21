@@ -1,0 +1,1 @@
+// No need to duplicate, tabs are handled in menu.js
